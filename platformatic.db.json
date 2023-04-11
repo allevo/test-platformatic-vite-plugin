@@ -1,0 +1,26 @@
+{
+    "server": {
+        "logger": {
+            "level": "trace",
+            "transport": {
+                "target": "pino-pretty"
+            }
+        },
+        "hostname": "localhost",
+        "port": "9090"
+    },
+    "db": {
+        "connectionString": "sqlite://./db.sqlite"
+    },
+    "migrations": {
+        "dir": "./migrations",
+        "autoApply": true
+    },
+    "plugins": {
+        "paths": [
+            {
+                "path": "./plugin.js"
+            }
+        ]
+    }
+}
